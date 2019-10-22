@@ -8,14 +8,20 @@
   <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css">
 </head>
 <body>
-  <noscript>This page requires JavaScript to work, please enable it or just read it on <a href="https://github.com/MadeByThePinsHub/madebythepinshub.github.io">original GitHub repository instead</a>.</noscript>
+  <noscript>We need JavaScript for this interactive website to work. Still see this? Go to <a href="https://github.com/MadeByThePinsHub/madebythepinshub.github.io/docs">the original GitHub repository instead</a>, or <a href="https://contact.devhubcentral.ml">Contact Support</a>.</noscript>
   <div id="app">Hold tight, loading things up...</div>
   <script>
     window.$docsify = {
-      basePath: ''/docs/'
+      basePath: '/docs/',
       name: 'Coding Hub - Made By The Pins',
       repo: 'MadeByThePinsHub/madebythepinshub.github.io',
-      search: ['/']
+      relativePath: true,
+      notFoundPage: true,
+      search: {
+        maxAge: 86400000,
+        paths: auto,
+        placeholder: 'Type to search around'
+      }
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
