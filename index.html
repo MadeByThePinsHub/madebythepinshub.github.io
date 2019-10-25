@@ -13,7 +13,7 @@
     window.$docsify = {
       name: 'Coding Hub - Made By The Pins',
       repo: 'MadeByThePins/madebythepins.github.io',
-      basePath: '/docs/',
+      basePath: '/source/',
       path: 'auto',
       plugins: [
         function (hook, vm) {
@@ -23,7 +23,7 @@
                 .replace('raw.githubusercontent.com', 'github.com')
                 .replace(/\/master/, '/blob/master')
             } else {
-              url = 'https://github.com/MadeByThePinsHub/madebythepinshub.github.io/blob/master/docs/' + vm.route.file
+              url = 'https://github.com/MadeByThePinsHub/madebythepinshub.github.io/blob/master/source/' + vm.route.file
             }
             var editHtml = '[:memo: Edit Document](' + url + ')\n'
             return editHtml
