@@ -1,3 +1,3 @@
-- About the team
-  - [Contact Us](about.md#how-you-contact-us)
-  - [Community](about.md#community)
+- Overview
+  - [Contact The Team](contact.md)
+  - [About us](about.md)
